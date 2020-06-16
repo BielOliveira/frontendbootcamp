@@ -1,5 +1,8 @@
 import React, {useState} from 'react'
 
+import './App.css';
+import bgimage from './assets/aguia.jpg';
+
 import Header from './components/Header';
 
 function App() {
@@ -16,6 +19,7 @@ function App() {
     return ( 
         <>
             <Header title="Projects"/>
+            <img width="50%"src={bgimage} alt=""/>
             <ul>
                 {projects.map(project=>{
                     return(
